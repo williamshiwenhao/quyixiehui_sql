@@ -47,13 +47,6 @@ if __name__ == '__main__':
                 values = cursor.fetchall()
                 rows = cursor.column_names
                 printMd(fd, pir[0], rows, values)
-                # for row in rows:
-                #     fd.write(row+"\t")
-                # fd.write("\n")
-                # for line in values:
-                #     for row in line:
-                #         fd.write(str(row)+"\t")
-                #     fd.write("\n")
                 break
         fd.write("\n")
     fd.close()
